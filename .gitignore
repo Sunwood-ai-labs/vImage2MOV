@@ -1,0 +1,5 @@
+image/*
+*.mp4
+modules/__pycache__
+modules/Transition/__pycache__/
+modules/utils/__pycache__/

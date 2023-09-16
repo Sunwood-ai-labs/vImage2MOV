@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 import cv2
 import numpy as np
-from modules import v_image_blurred_utils
+from modules.utils import v_image_blurred_utils
 
 class BlurredBackgroundEmbedder:
     def __init__(self, input_folder: str, height: int = 2000):
