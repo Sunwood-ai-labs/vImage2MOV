@@ -117,7 +117,7 @@ pipeline.execute_pipeline()
 
 詳細な解説はこちら
 
-
+https://hamaruki.com/automatically-generate-posted-videos-from-images/
 
 ## まとめ
 
