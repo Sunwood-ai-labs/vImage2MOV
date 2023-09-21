@@ -44,4 +44,4 @@ if __name__ == "__main__":
     tprint("Image to Video Processing")
 
     
-    demo.launch(server_port=7888)
+    demo.launch()
