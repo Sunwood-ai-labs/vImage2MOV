@@ -2,15 +2,17 @@ import os
 import gradio as gr
 from main import VideoProcessingPipeline
 import shutil
+from art import *
 
 def remove_temp_folder():
     """一時的なフォルダを削除する関数"""
-    temp_dir = "_tmp/temp_uploaded_images"
+    temp_dir = "_tmp"
     if os.path.exists(temp_dir):
         shutil.rmtree(temp_dir)
 
 def process_uploaded_images(files):
     # _tmpフォルダ内に一時的なフォルダを作成して、アップロードされた画像を保存
+    remove_temp_folder()  # 起動時に一時的なフォルダを削除
     temp_folder = "_tmp/temp_uploaded_images"
     os.makedirs(temp_folder, exist_ok=True)
     
@@ -35,5 +37,7 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    remove_temp_folder()  # 起動時に一時的なフォルダを削除
-    demo.launch()
+    tprint("Image to Video Processing")
+
+    
+    demo.launch(server_port=7888)
