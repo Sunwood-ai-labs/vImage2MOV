@@ -30,6 +30,7 @@ def process_uploaded_images(files):
     pipeline = VideoProcessingPipeline(temp_folder)
     pipeline.execute_pipeline()
     
+    logger.info(".... Fin")
     # 最終的に生成された動画のパスを返す
     return os.path.join(pipeline.final_folder, "concatenated_video.mp4")
 
