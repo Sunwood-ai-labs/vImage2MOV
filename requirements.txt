@@ -1,3 +1,0 @@
-gradio
-opencv-python
-Pillow==9.5.0
