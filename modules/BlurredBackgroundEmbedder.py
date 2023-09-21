@@ -28,7 +28,9 @@ class BlurredBackgroundEmbedder:
         指定されたフォルダ内のすべての画像を処理します。
         """
         image_files = [f for f in os.listdir(self.input_folder) if os.path.isfile(os.path.join(self.input_folder, f))]
-        
+        print("self.input_folder")
+        print(self.input_folder)
+
         for image_file in image_files:
             input_image_path = os.path.join(self.input_folder, image_file)
             output_image_path = os.path.join(self.output_folder, image_file)

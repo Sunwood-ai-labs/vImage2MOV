@@ -1,3 +1,14 @@
+---
+title: Image to Video Processing Pipelin
+emoji: 🎥
+colorFrom: green
+colorTo: red
+sdk: gradio
+sdk_version: 3.41.2
+app_file: app.py
+pinned: false
+license: apache-2.0
+---
 
 # VideoProcessingPipeline(SNS投稿動画生成ツール)
 
